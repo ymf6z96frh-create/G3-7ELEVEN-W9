@@ -1,0 +1,369 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>G3 · 7-ELEVEN Taiwan BNA Agent | W9 PRD Proposal</title><style>
+:root{--green:#087a53;--deep:#0a493c;--orange:#ef8d29;--red:#d9493d;--ink:#182e29;--muted:#60756f;--bg:#f5f7f1;--paper:#fff;--line:#dce6df;--shadow:0 18px 48px #0b493c12}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,'Noto Sans TC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.55}button{font:inherit;cursor:pointer}a{color:var(--green)}.top{position:sticky;top:0;z-index:30;background:#ffffffef;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.stripe{height:5px;background:linear-gradient(90deg,var(--green) 0 55%,var(--orange) 55% 79%,var(--red) 79%)}.bar{max-width:1440px;margin:auto;display:flex;align-items:center;gap:16px;padding:13px 28px}.brand{font-weight:850;letter-spacing:-.035em;font-size:19px;white-space:nowrap}.brand span{color:var(--green)}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:.15em;font-weight:700}.nav{display:flex;gap:5px;overflow:auto;scrollbar-width:none;flex:1}.nav button{border:0;background:transparent;color:var(--muted);border-radius:9px;padding:9px 11px;white-space:nowrap;font-size:12px;font-weight:700}.nav button.active,.nav button:hover{background:#e5f3ea;color:var(--green)}.tools{display:flex;gap:7px}.tool{border:1px solid var(--line);background:white;border-radius:10px;padding:8px 12px;font-size:12px;font-weight:750}.tool.primary{background:var(--green);color:white;border-color:var(--green)}main{max-width:1220px;margin:auto;padding:35px 28px 95px}.slide{display:none;animation:rise .24s ease}.slide.active{display:block}@keyframes rise{from{opacity:.45;transform:translateY(7px)}to{opacity:1;transform:none}}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:800;color:var(--green)}h1{font-size:clamp(36px,5.6vw,73px);line-height:1.07;letter-spacing:-.055em;margin:15px 0 20px;max-width:900px}h2{font-size:clamp(29px,4vw,47px);letter-spacing:-.04em;line-height:1.13;margin:10px 0 14px}h3{font-size:20px;letter-spacing:-.025em;margin:0 0 9px}.lead{font-size:clamp(16px,2vw,21px);color:var(--muted);max-width:850px;margin:0 0 26px}.hero{background:linear-gradient(125deg,#e2f2e7 0%,#fff 66%);border:1px solid var(--line);border-radius:25px;padding:clamp(25px,5vw,60px);position:relative;overflow:hidden}.hero:after{content:'7';position:absolute;right:-25px;bottom:-130px;font-size:440px;font-weight:950;color:#087a530b;line-height:1;pointer-events:none}.hero>*{position:relative;z-index:1}.pill{display:inline-block;border:1px solid #bcd9c7;background:#fff;padding:6px 12px;border-radius:40px;font-size:12px;font-weight:750;color:var(--green)}.path{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:32px 0 0}.path strong{background:white;border:1px solid #cfe1d4;padding:14px 20px;border-radius:12px;font-size:19px}.path i{font-style:normal;color:var(--orange);font-weight:900}.grid{display:grid;gap:17px}.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g4{grid-template-columns:repeat(4,minmax(0,1fr))}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:23px;box-shadow:0 6px 20px #124a3c06}.card p{color:var(--muted);margin:8px 0 0}.card .num{font-size:12px;font-weight:850;color:var(--orange);letter-spacing:.1em;margin-bottom:15px}.highlight{background:#e6f4e9;border:1px solid #cce5d4;border-radius:16px;padding:22px 25px;margin-top:20px}.highlight strong{color:var(--deep)}.sectionhead{margin-bottom:26px}.sectionhead .lead{margin-bottom:0}.split{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.mini{font-size:12px;color:var(--muted)}.tag{display:inline-block;font-size:11px;font-weight:800;border-radius:7px;padding:5px 8px;background:#eef4ef;color:var(--deep);margin:4px 5px 0 0}.tag.orange{background:#fff0de;color:#9b590e}.tag.red{background:#ffedea;color:#a8342b}.choice{border:1px solid var(--line);background:white;border-radius:12px;padding:14px 16px;text-align:left;font-weight:750;color:var(--ink);transition:.15s}.choice:hover,.choice.selected{border-color:var(--green);background:#eaf5ed;color:var(--green)}.choice small{display:block;color:var(--muted);font-weight:500;margin-top:4px}.detail{background:white;border:1px solid var(--line);border-radius:17px;padding:25px;min-height:180px}.detail ul{padding-left:20px}.detail li{margin:7px 0}.flow{display:flex;gap:8px;flex-wrap:wrap;margin:25px 0}.step{flex:1 1 155px;background:white;border:1px solid var(--line);padding:16px 13px;border-radius:12px;text-align:center;position:relative}.step b{display:block;color:var(--deep);font-size:14px}.step span{font-size:12px;color:var(--muted)}.step:not(:last-child):after{content:'→';position:absolute;right:-12px;top:33%;font-size:20px;color:var(--orange);z-index:2;font-weight:900}.mock{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}.mockbar{background:#0a654c;color:white;padding:15px 21px;display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:800}.mockbody{padding:22px}.mockhero{background:#edf7ed;border-radius:12px;padding:25px}.mockhero h3{font-size:25px}.mocklinks{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:15px}.mocklinks button{background:white;border:1px solid #d4e7d9;border-radius:9px;padding:12px 5px;color:var(--green);font-size:12px;font-weight:800}.mocklinks button:hover{background:#e8f4e9}.timeline{border-left:3px solid #c6e3d1;padding-left:23px;margin:18px 0}.timeline .item{position:relative;margin-bottom:19px}.timeline .item:before{content:'';position:absolute;left:-31px;top:6px;background:var(--orange);border:4px solid white;box-shadow:0 0 0 1px var(--orange);width:10px;height:10px;border-radius:50%}.timing{position:fixed;bottom:20px;right:20px;z-index:40;background:#0b493c;color:white;border-radius:14px;padding:11px 16px;box-shadow:var(--shadow);font-size:13px;display:flex;align-items:center;gap:12px}.timing button{border:1px solid #ffffff70;border-radius:8px;background:transparent;color:white;padding:5px 9px}.footnav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:30px}.footnav button{border:1px solid var(--line);background:white;border-radius:12px;padding:11px 16px;font-weight:800}.footnav button.next{background:var(--deep);color:white}.progress{height:3px;background:#e0e9e0}.progress div{height:100%;background:var(--orange);transition:width .2s}.doc{background:white;border:1px solid var(--line);padding:35px;border-radius:18px;max-height:65vh;overflow:auto}.doc h1,.doc h2,.doc h3{font-size:revert;letter-spacing:normal;line-height:1.3}.doc table{border-collapse:collapse;width:100%;font-size:13px}.doc td,.doc th{border:1px solid var(--line);padding:8px;text-align:left}.doc th{background:#eef5ef}.doc p,.doc li{font-size:14px}.doc h1{margin-top:30px}.doc code{white-space:pre-wrap}.subtle{font-size:12px;color:var(--muted);margin-top:16px}.presentation main{max-width:1500px;padding-top:35px}.presentation .bar{max-width:1600px}.presentation .card{padding:27px}.presentation h2{font-size:clamp(36px,4vw,60px)}.presentation .lead{font-size:22px}@media(max-width:850px){.bar{padding:11px 14px;flex-wrap:wrap}.brand{font-size:15px}.nav{order:3;width:100%;flex-basis:100%}.tools{margin-left:auto}.g4,.g3{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr}.step:not(:last-child):after{display:none}main{padding:20px 14px 100px}.hero{padding:28px}.mocklinks{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.g2,.g3,.g4{grid-template-columns:1fr}.timing{bottom:8px;right:8px}.path strong{font-size:15px;padding:10px}.card{padding:18px}}@media print{.top,.timing,.footnav{display:none!important}.slide{display:block!important;break-after:page;padding:20px 0}.doc{max-height:none}main{max-width:none}}
+</style></head><body><header class="top"><div class="stripe"></div><div class="bar"><div class="brand"><span>7-ELEVEN</span> Taiwan <small>G3 · BUSINESS NEWS ANALYSIS AGENT</small></div><nav class="nav" id="nav"></nav><div class="tools"><button class="tool" id="docBtn">Full PRD</button><button class="tool primary" id="presentBtn">⛶ Present</button></div></div><div class="progress"><div id="progress"></div></div></header><main>
+<section class="slide active" id="overview"><div class="hero"><span class="pill">W9 · TP PROPOSAL · GROUP 3</span><h1>Beyond Convenience.<br><span style="color:var(--green)">Beyond Headlines.</span></h1><p class="lead">Designing a Business News Analysis Agent for 7-ELEVEN Taiwan — from scattered public information to traceable business insights.</p><div class="path"><strong>Search</strong><i>→</i><strong>Analyze</strong><i>→</i><strong>Present</strong></div><p class="subtle">Scope: Taiwan convenience-store retail operations · PRD design presentation · 10 minutes</p></div><div class="grid g3" style="margin-top:18px"><div class="card"><div class="num">WHY THIS COMPANY</div><h3>Beyond traditional retail</h3><p>Physical stores connect with digital channels, membership, logistics and everyday-life services.</p></div><div class="card"><div class="num">THE RESEARCH PROBLEM</div><h3>Fragmented evidence</h3><p>Company disclosures, public data, research and business news are difficult to track and connect manually.</p></div><div class="card"><div class="num">OUR DESIGN GOAL</div><h3>Why it matters</h3><p>Collect, analyze, connect and present findings — while separating verified facts from interpretations.</p></div></div></section>
+<section class="slide" id="search"><div class="sectionhead"><div class="eyebrow">02 / Search</div><h2>Discover. Filter. Organize.</h2><p class="lead">Search is designed to collect source-linked evidence within the Taiwan convenience-store retail scope.</p></div><div class="split"><div class="card"><h3>Five research source areas</h3><div class="grid g2" id="sources" style="margin-top:15px"></div></div><div class="card"><h3>Update schedule</h3><div class="timeline"><div class="item"><b>Daily · Business news</b><p class="mini">Screen roughly 20 candidates; prioritize approximately 3–5 relevant items, depending on volume.</p></div><div class="item"><b>At least weekly · Corporate & government</b><p class="mini">Check official updates; increase frequency for major announcements where feasible.</p></div><div class="item"><b>On release · Financial information</b><p class="mini">Follow monthly revenue and periodic financial reporting schedules.</p></div></div><span class="tag orange">Initial coverage: approximately 2 years</span></div></div><div class="highlight"><strong>Search → Analyze handoff</strong><div style="margin-top:7px">Each retained record includes source, URL, date, summary, relevant figures, topic/framework tags, priority and verification status. Missing evidence is flagged, never invented.</div></div></section>
+<section class="slide" id="analyze"><div class="sectionhead"><div class="eyebrow">03 / Analyze</div><h2>Four questions. Four perspectives.</h2><p class="lead">Select a module to explore its analytical purpose, inputs and intended outputs.</p></div><div class="grid g4" id="moduleBtns"></div><div class="detail" id="moduleDetail" style="margin-top:16px"></div><div class="highlight"><strong>Research coverage</strong><div style="margin-top:8px">Company · Competitors · Key Partners · Supply Chain · PESTEL are research areas addressed through the four modules — not five extra technical modules.</div></div></section>
+<section class="slide" id="intelligence"><div class="sectionhead"><div class="eyebrow">04 / Synthesis</div><h2>Not every event is an insight.</h2><p class="lead">The design separates short-term weekly monitoring from significant cross-module interpretation.</p></div><div class="grid g2"><div class="card"><div class="num">PERIODIC OUTPUT</div><h3>Weekly Business Intelligence</h3><p>Summarizes verified developments from the previous seven days.</p><div style="margin-top:20px"><span class="tag">Key Developments</span><span class="tag">Business Implications</span><span class="tag">Opportunities & Risks</span><span class="tag">What to Monitor</span></div><p class="mini" style="margin-top:17px">A dated report with sources, review status and a historical archive. Not a fifth analysis module.</p></div><div class="card"><div class="num">SELECTIVE SYNTHESIS</div><h3>Cross-Analysis → Key Insights</h3><p>Connects only analytical findings with meaningful, evidence-supported relationships.</p><div style="margin-top:20px"><span class="tag">Key Finding</span><span class="tag">Related Analyses</span><span class="tag">Supporting Evidence</span><span class="tag">Review Status</span></div><p class="mini" style="margin-top:17px">Do not force every event into all four modules or publish unsupported conclusions.</p></div></div><div class="highlight"><strong>Design decision:</strong> Routine events remain in their appropriate modules. Only sufficiently significant, supported relationships become integrated Key Insights.</div></section>
+<section class="slide" id="present"><div class="sectionhead"><div class="eyebrow">05 / Present</div><h2>Make complex research explorable.</h2><p class="lead">An interactive bilingual website concept — the panel below illustrates planned navigation, not a live Agent or actual company findings.</p></div><div class="split"><div class="mock"><div class="mockbar"><span>7-ELEVEN · BNA INSIGHTS</span><span>EN / 中文</span></div><div class="mockbody"><div class="mockhero"><div class="eyebrow">Proposed homepage</div><h3>Understand the business behind convenience.</h3><p class="mini">Key Insights · Weekly Intelligence · Original sources · Update & review status</p></div><div class="mocklinks" id="mockLinks"></div><div id="mockDetail" class="detail" style="margin-top:13px;min-height:135px;background:#f8faf6"></div></div></div><div class="card"><h3>Planned website experiences</h3><div class="timeline"><div class="item"><b>Interactive BMC</b><p class="mini">Nine blocks; emphasize Customer Relationships and Channels.</p></div><div class="item"><b>PESTEL factors</b><p class="mini">Six selectable external dimensions with source-linked implications.</p></div><div class="item"><b>Financial BI & News DA</b><p class="mini">Labeled charts, event timeline, search and filters.</p></div><div class="item"><b>Key Insights & Weekly Intelligence</b><p class="mini">Expandable Related Analyses, reports and archives.</p></div><div class="item"><b>Two-minute bilingual video</b><p class="mini">Company introduction embedded on the homepage; click to play.</p></div></div></div></div></section>
+<section class="slide" id="connections"><div class="sectionhead"><div class="eyebrow">06 / Explore the Connections</div><h2>One connected, traceable workflow.</h2><p class="lead">Search → Filter & Organize → Analyze → Automated Verification → Risk-Based Review → Present.</p></div><div class="flow"><div class="step"><b>Search</b><span>Retrieve updates</span></div><div class="step"><b>Filter & Organize</b><span>Deduplicate, tag</span></div><div class="step"><b>Analyze</b><span>Route to modules</span></div><div class="step"><b>Verify</b><span>Check source & figures</span></div><div class="step"><b>Review</b><span>Risk-based approval</span></div><div class="step"><b>Present</b><span>Publish appropriately</span></div></div><div class="split"><div class="card"><h3>Try the hypothetical use case</h3><p class="mini">A competitor announces a new membership service. Click each stage to see how the proposed Agent would handle it.</p><div id="caseBtns" class="grid g2" style="margin-top:15px"></div></div><div class="detail" id="caseDetail"></div></div><div class="highlight"><strong>Human oversight by design:</strong> Low-risk facts that pass automated checks may be published. Significant business judgments, uncertain evidence and cross-module interpretations remain Pending Review until approved.</div></section>
+<section class="slide" id="close"><div class="sectionhead"><div class="eyebrow">07 / Wrap-up</div><h2>From what happened<br>to why it matters.</h2><p class="lead">Our PRD proposes a traceable research workflow, complementary business analysis and an understandable bilingual presentation layer.</p></div><div class="grid g3"><div class="card"><div class="num">01 · EVIDENCE</div><h3>Traceable by design</h3><p>Original URLs, dates, source identities, verification and review status.</p></div><div class="card"><div class="num">02 · INTERPRETATION</div><h3>Selective and careful</h3><p>Four modules, weekly intelligence and meaningful Cross-Analysis — without invented conclusions.</p></div><div class="card"><div class="num">03 · EXPERIENCE</div><h3>Accessible and bilingual</h3><p>Interactive analysis pages, Key Insights, report archive and a two-minute bilingual animation.</p></div></div><div class="highlight"><strong>Planned deliverables:</strong> Bilingual interactive website + embedded two-minute bilingual animated company introduction. Technical implementation choices and group task assignments will be confirmed later.</div><div style="margin-top:28px;text-align:center"><span class="pill">GROUP 3 · THANK YOU</span></div></section>
+<section class="slide" id="document"><div class="sectionhead"><div class="eyebrow">Reference / Full source</div><h2>Complete PRD.md</h2><p class="lead">Original uploaded PRD content, available for detailed questions and source checking.</p></div><div class="doc" id="fullDoc"><h1>G3_PRD_7-ELEVEN Taiwan</h1>
+<h2>Product Requirements Document (PRD) — 7-ELEVEN Taiwan Business News Analysis Agent</h2>
+<p><strong>Project Company:</strong> 7-ELEVEN Taiwan (operated by President Chain Store Corporation / 統一超商)<br />
+<strong>Business Scope:</strong> Taiwan convenience store retail business, including directly related physical stores, digital channels, membership and everyday-life services<br />
+<strong>Core Directions:</strong> Search → Analyze → Present</p>
+<hr />
+<h1>1. Development Intent</h1>
+<h2>1.1 Why 7-ELEVEN Taiwan?</h2>
+<p>We selected 7-ELEVEN Taiwan because its business model goes beyond traditional convenience-store retailing. Its extensive physical store network connects with digital platforms, membership programs, logistics and everyday-life services. These features make <strong>Customer Relationships</strong> and <strong>Channels</strong> particularly relevant to understanding how the company delivers value and responds to changing consumer needs.</p>
+<p>At the same time, its operations are affected by competition, consumer behavior, technology, regulation, costs and sustainability pressures. Relevant evidence is spread across corporate announcements, financial disclosures, government publications, industry research and business news. Tracking these sources manually makes it difficult for our project group to connect individual developments to broader business-model and market trends.</p>
+<h2>1.2 Development Objectives</h2>
+<p>We aim to design a Business News Analysis (BNA) Agent to support our group's research into 7-ELEVEN Taiwan's convenience-store retail business. The Agent would:</p>
+<ol>
+<li><strong>Collect information regularly</strong> from traceable public sources, reducing repetitive searching and organization.</li>
+<li><strong>Analyze business developments systematically</strong> through BMC, PESTEL, Financial BI and News DA.</li>
+<li><strong>Connect relevant findings</strong> across analytical perspectives to identify evidence-supported implications, opportunities and risks.</li>
+<li><strong>Present understandable, traceable results</strong> through a bilingual interactive website.</li>
+</ol>
+<p><strong>Core idea:</strong> Move beyond <em>what happened</em> to examine <em>why it matters for 7-ELEVEN Taiwan</em>, while distinguishing verified facts from interpretations and hypotheses.</p>
+<hr />
+<h1>2. Search — Information Discovery and Organization</h1>
+<h2>2.1 Search Scope and Sources</h2>
+<table>
+<thead>
+<tr>
+  <th>Information category</th>
+  <th>Planned content</th>
+  <th>Priority sources</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Company information</td>
+  <td>Retail strategy, stores, services, membership, digital channels, sustainability</td>
+  <td>7-ELEVEN Taiwan and President Chain Store Corporation official websites and investor relations</td>
+</tr>
+<tr>
+  <td>Financial information</td>
+  <td>Monthly revenue, financial statements, annual reports, investor presentations, operating indicators</td>
+  <td>Market Observation Post System (MOPS), corporate disclosures</td>
+</tr>
+<tr>
+  <td>Competitors and market</td>
+  <td>Pricing information, store locations, service differences, membership and digital strategies; industry trends</td>
+  <td>Official information from FamilyMart Taiwan, Hi-Life and OKmart; industry reports and business news</td>
+</tr>
+<tr>
+  <td>Partners and supply chain</td>
+  <td>Delivery efficiency, supply reliability, raw-material and logistics costs, suppliers, payment partnerships and strategic partners</td>
+  <td>Corporate and partner announcements, industry reports</td>
+</tr>
+<tr>
+  <td>External environment</td>
+  <td>Policy, inflation, consumer behavior, retail technology, energy, packaging and regulation</td>
+  <td>Government agencies, research institutions, industry publications and credible news</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Illustrative search queries (not a fixed keyword list):</strong></p>
+<table>
+<thead>
+<tr>
+  <th>Search category</th>
+  <th>Example queries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Company information</td>
+  <td>“統一超商 展店”; “OPEN POINT 會員服務”</td>
+</tr>
+<tr>
+  <td>Financial information</td>
+  <td>“統一超商 月營收”; “統一超商 法說會”</td>
+</tr>
+<tr>
+  <td>Competitors and market</td>
+  <td>“全家便利商店 數位服務”; “台灣 便利商店 市場趨勢”</td>
+</tr>
+<tr>
+  <td>Partners and supply chain</td>
+  <td>“統一超商 物流 配送”; “便利商店 供應鏈 合作”</td>
+</tr>
+<tr>
+  <td>External environment</td>
+  <td>“便利商店 包裝 法規”; “台灣 便利商店 消費趨勢”</td>
+</tr>
+</tbody>
+</table>
+<p>These queries illustrate intended search behavior, not findings or a restrictive keyword list. The Agent may adapt queries as new events, sources and research needs emerge.</p>
+<p>The research focuses on <strong>Taiwan convenience-store retail operations</strong>, rather than all businesses of the broader corporate group. Related services are included when they help explain the retail business.</p>
+<h2>2.2 Search Schedule and Mechanisms</h2>
+<p><strong>Initial historical coverage:</strong> On initial setup, the Agent would build a reference collection covering approximately the <strong>previous two years</strong>, subject to source availability. Older figures may be used where necessary for meaningful financial comparisons.</p>
+<p><strong>Ongoing updates:</strong></p>
+<ul>
+<li><strong>Business news:</strong> Search for newly published items daily; target roughly 20 candidate items for screening and prioritize approximately 3–5 relevant items, depending on actual news volume.</li>
+<li><strong>Corporate and government information:</strong> Check for updates at least weekly, with more frequent checks for major announcements where feasible.</li>
+<li><strong>Financial information:</strong> Check and update according to monthly revenue and periodic financial-report release schedules, rather than recalculating every historical report each day.</li>
+</ul>
+<p><strong>Processing functions:</strong> Keyword and source searches; relevance and date filtering; duplicate and same-event grouping; categorization by company, competitor, industry and relevant analytical dimensions; priority scoring; historical record retention.</p>
+<p>The Agent should use publicly accessible information lawfully, respect site access rules, avoid unnecessary personal-data collection and record retrieval failures or inaccessible sources instead of inventing missing content.</p>
+<h2>2.3 Search Output and Handoff to Analyze</h2>
+<p>Each retained record should include a title, publication date, source name, original URL, summary, relevant figures (if any), topic and framework tags, importance/relevance indication, and verification status. Where relevant, the Agent should distinguish the <strong>event date</strong> from the <strong>publication date</strong>.</p>
+<p>These structured records become inputs to the appropriate analysis modules. An unverified or insufficiently sourced claim should be flagged rather than treated as established evidence.</p>
+<hr />
+<h1>3. Analyze — Business Analysis Functions</h1>
+<p>The Agent uses four complementary modules. Each answers a distinct business question; <strong>Cross-Analysis</strong> connects findings only when meaningful relationships and supporting evidence exist.</p>
+<h2>3.1 Business Model Analysis (BMC)</h2>
+<p><strong>Question:</strong> How does 7-ELEVEN Taiwan create, deliver and capture value?</p>
+<p><strong>Inputs:</strong> Corporate strategy and service information, membership and channel descriptions, relevant partner announcements, industry news and comparable competitor information.</p>
+<p><strong>Functions and methods:</strong></p>
+<ul>
+<li>Organize evidence across the nine Business Model Canvas building blocks.</li>
+<li>Emphasize <strong>Customer Relationships (CR)</strong> and <strong>Channels (CH)</strong>, including membership engagement, physical stores, apps and everyday-life services.</li>
+<li>Examine relationships among the building blocks and identify documented changes over time.</li>
+<li>Compare selected competitors’ pricing, store networks, service differences and channel strategies when information is comparable.</li>
+<li>Examine how suppliers, logistics providers, payment platforms and strategic partners support retail and everyday-life services under <strong>Key Partners</strong>; consider documented delivery, supply and cost implications through <strong>Key Activities, Key Resources and Cost Structure</strong>.</li>
+</ul>
+<p><strong>Outputs:</strong> An evidence-linked nine-block BMC, focused CR/CH explanations, and documented business-model changes with potential opportunities and challenges.</p>
+<h2>3.2 PESTEL Analysis</h2>
+<p><strong>Question:</strong> Which external developments may affect the business, and how?</p>
+<table>
+<thead>
+<tr>
+  <th>Dimension</th>
+  <th>Examples of topics to monitor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Political</td>
+  <td>Government policies and industry measures</td>
+</tr>
+<tr>
+  <td>Economic</td>
+  <td>Inflation, purchasing power, energy and operating costs</td>
+</tr>
+<tr>
+  <td>Social</td>
+  <td>Demographics, lifestyles and consumer habits</td>
+</tr>
+<tr>
+  <td>Technological</td>
+  <td>AI, digital payments and smart retail</td>
+</tr>
+<tr>
+  <td>Environmental</td>
+  <td>Carbon reduction, energy, packaging and sustainability</td>
+</tr>
+<tr>
+  <td>Legal</td>
+  <td>Food safety, labor and environmental requirements</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Inputs:</strong> Government publications, industry studies, corporate responses and relevant news.</p>
+<p><strong>Methods:</strong> Classify developments; identify what changed; explain plausible business implications; document corporate responses when supported; distinguish confirmed effects from prospective risks.</p>
+<p><strong>Outputs:</strong> PESTEL findings with supporting evidence, potential opportunities and threats, and issues worth monitoring.</p>
+<h2>3.3 Financial Business Intelligence (Financial BI)</h2>
+<p><strong>Question:</strong> How are financial and operating performance changing?</p>
+<p><strong>Inputs:</strong> MOPS filings, corporate financial statements, monthly revenue announcements, investor presentations and publicly disclosed operating indicators.</p>
+<p><strong>Functions:</strong></p>
+<ul>
+<li><strong>Revenue:</strong> Revenue, growth rates and appropriate year-over-year (YoY) or quarter-over-quarter (QoQ) comparisons.</li>
+<li><strong>Profitability:</strong> Gross, operating and net margins; ROA and ROE where meaningful and available.</li>
+<li><strong>Operations:</strong> Store count, openings and other disclosed, comparable operating indicators.</li>
+<li><strong>Comparison:</strong> Historical trends and carefully scoped competitor comparisons when definitions, time periods and reporting entities are comparable.</li>
+</ul>
+<p><strong>Methods:</strong> Identify the reporting entity, period, unit and consolidated versus standalone scope; extract and validate figures; calculate suitable indicators; identify changes; seek additional evidence before proposing explanations.</p>
+<p><strong>Outputs:</strong> Labeled financial and operating indicators, trend charts and evidence-based commentary.</p>
+<p><strong>Important limitation:</strong> President Chain Store Corporation's consolidated results must <strong>not</strong> be presented as financial results of the 7-ELEVEN Taiwan brand alone. Correlation between events and performance does not establish causation.</p>
+<h2>3.4 Business News &amp; Data Analysis (News DA)</h2>
+<p><strong>Question:</strong> Which company and market events matter, and what patterns are emerging?</p>
+<p><strong>Inputs:</strong> Screened business news, official announcements and historical event records.</p>
+<p><strong>Functions:</strong></p>
+<ul>
+<li>Identify each event, date, organization and key development.</li>
+<li>Classify events as <strong>Company</strong>, <strong>Competitors</strong> or <strong>Industry</strong>, with supplementary <strong>Key Partners</strong>, <strong>Supply Chain</strong> and external-factor tags when relevant.</li>
+<li>Merge multiple reports about the same event and preserve distinct sources.</li>
+<li>Compare events over time to identify recurring topics and developing trends.</li>
+<li>Track competitors’ pricing, store expansion and service changes, as well as partner developments, delivery efficiency, supply reliability, raw-material costs and logistics costs; compare changes only when verifiable data is available.</li>
+<li>Assess relevance to 7-ELEVEN Taiwan without duplicating the deeper work of BMC, PESTEL or Financial BI.</li>
+</ul>
+<p><strong>Outputs:</strong> Prioritized event summaries, categorized records, a timeline, trend observations and follow-up topics.</p>
+<h3>Mapping the Five Research Areas to the Analysis Modules</h3>
+<p>The course notes identify <strong>Company, Competitors, Key Partners, Supply Chain and PESTEL</strong> as five <strong>research areas</strong>, not necessarily five separate technical modules. The Agent addresses them through the existing analysis structure:</p>
+<table>
+<thead>
+<tr>
+  <th>Research area</th>
+  <th>Main modules</th>
+  <th>Analytical focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Company</strong></td>
+  <td>Financial BI, BMC, News DA</td>
+  <td>Revenue, profitability, store expansion, products and operating strategies</td>
+</tr>
+<tr>
+  <td><strong>Competitors</strong></td>
+  <td>News DA, BMC; Financial BI where appropriate</td>
+  <td>Pricing, store locations and service differences; comparisons only when data is available and comparable</td>
+</tr>
+<tr>
+  <td><strong>Key Partners</strong></td>
+  <td>BMC, News DA</td>
+  <td>Suppliers, payment platforms, logistics and strategic partnerships and how they support services</td>
+</tr>
+<tr>
+  <td><strong>Supply Chain</strong></td>
+  <td>News DA, BMC; PESTEL where relevant</td>
+  <td>Delivery efficiency, supply reliability, raw-material and logistics costs and their business implications</td>
+</tr>
+<tr>
+  <td><strong>PESTEL</strong></td>
+  <td>PESTEL Analysis</td>
+  <td>Political, economic, social, technological, environmental and legal changes</td>
+</tr>
+</tbody>
+</table>
+<p>If direct evidence about delivery efficiency, supply reliability or costs is unavailable, the Agent should report verified developments and possible implications <strong>without inventing performance metrics or asserting unverified effects</strong>.</p>
+<h2>3.5 Weekly Business Intelligence — Periodic Synthesis</h2>
+<p><strong>Purpose:</strong> Turn the previous seven days of verified developments into a concise, source-linked weekly intelligence report. This is a recurring <strong>output of the four existing analysis modules</strong>, not a fifth analysis module.</p>
+<p><strong>Process:</strong></p>
+<ol>
+<li>Gather screened, non-duplicate events and relevant financial or official updates from the reporting week.</li>
+<li>Select important developments; route each event to its most relevant primary module and involve additional modules only when supported by evidence.</li>
+<li>Summarize <strong>Key Developments</strong>, <strong>Business Implications</strong>, <strong>Opportunities &amp; Risks</strong>, and <strong>What to Monitor</strong>. Do not force every event to fill all categories.</li>
+<li>Distinguish verified developments from AI interpretations. Significant business implications, risks and cross-module judgments remain <strong>Pending Review</strong> until approved.</li>
+<li>If the week has insufficient significant developments, produce a short, factual report stating the limitation rather than inventing insights.</li>
+</ol>
+<p><strong>Outputs:</strong> A dated weekly summary, a full report with original sources and review status, and an accessible archive of past weekly reports. The weekly report explains <strong>what changed during the week</strong>; Key Insights capture more durable, significant evidence-supported connections that may span multiple weeks.</p>
+<h2>3.6 Cross-Analysis — Integrated Key Insights</h2>
+<p><strong>Question:</strong> What meaningful connections exist among the analytical findings?</p>
+<p><strong>Methods:</strong></p>
+<ol>
+<li>Select a significant finding from one or more modules.</li>
+<li>Identify only the other analytical dimensions genuinely related to that finding.</li>
+<li>Check whether the sources support the proposed connection.</li>
+<li>Explain potential business implications and identify opportunities, risks or follow-up questions.</li>
+<li>Label statements as verified facts, AI interpretations or unverified hypotheses.</li>
+</ol>
+<p><strong>Outputs:</strong> <strong>Integrated Key Insights</strong> with a key finding, relevant analytical connections, supporting sources, potential business implications and monitoring suggestions.</p>
+<p>Cross-Analysis is <strong>selective</strong>: a news event does not need to involve all four modules. Routine module findings can be presented without being turned into an integrated insight.</p>
+<hr />
+<h1>4. Present — Bilingual Website and Video</h1>
+<h2>4.1 Website Structure and User Interactions</h2>
+<p>The group plans a <strong>bilingual Chinese–English interactive website</strong> to present reviewed BNA Agent findings. Visitors can switch languages and navigate from the homepage to four analysis sections. Development tools and hosting will be selected later by the group.</p>
+<h3>Homepage</h3>
+<p><strong>Displayed content:</strong> A brief introduction to 7-ELEVEN Taiwan, selected Key Insights, a Weekly Intelligence summary with a link to the full report and historical archive, entry cards for BMC, PESTEL, Financial BI and News DA, and an embedded two-minute bilingual company-introduction video.</p>
+<p><strong>Interaction:</strong> Select a Key Insight to open its detail view; open the current Weekly Intelligence report or browse prior weeks; select a module card to visit its analysis page; play the video on demand, without autoplay. Insight cards show a short title, summary and update date, not invented or unverified performance figures.</p>
+<h3>Business Model (BMC)</h3>
+<p><strong>Displayed content:</strong> An interactive nine-block Business Model Canvas, highlighting Customer Relationships (CR) and Channels (CH).</p>
+<p><strong>Interaction:</strong> Selecting a block, such as Customer Relationships, reveals an analytical summary, relevant services or strategies, documented changes and original sources. Selecting Key Partners shows evidence-supported discussion of suppliers, logistics and payment partners. Users can return to the full canvas to explore other blocks.</p>
+<h3>PESTEL</h3>
+<p><strong>Displayed content:</strong> Six selectable factors—Political, Economic, Social, Technological, Environmental and Legal—and their priority topics.</p>
+<p><strong>Interaction:</strong> Selecting Technological, for example, shows relevant developments, potential business implications, documented company responses when available and source links. Insufficient evidence is explicitly indicated rather than replaced with speculative conclusions.</p>
+<h3>Financial BI</h3>
+<p><strong>Displayed content:</strong> Revenue, Profitability and Operations views with charts and concise explanations.</p>
+<p><strong>Interaction:</strong> Selecting Revenue displays supported revenue trends and period comparisons; switching to other views displays the corresponding metrics. Charts identify reporting periods, units, reporting entities and sources. Consolidated President Chain Store Corporation figures must <strong>not</strong> be presented as the standalone financial results of the 7-ELEVEN Taiwan brand.</p>
+<h3>News DA</h3>
+<p><strong>Displayed content:</strong> A chronological event timeline, prioritized summaries and links to original reports.</p>
+<p><strong>Interaction:</strong> Search by keyword (company, event or topic), filter by date range and by Company, Competitors or Industry; select an event to view its summary, date, relevant organization, business relevance and sources. Key Partners and Supply Chain can be secondary tags. The default view highlights priority events; <strong>View All Events</strong> reveals a fuller record. Multiple reports of the same event are grouped.</p>
+<h3>Weekly Intelligence</h3>
+<p><strong>Displayed content:</strong> The current week's brief summary, report period, original sources, review status and an entry to the full report. An archive allows browsing reports by week.</p>
+<p><strong>Interaction:</strong> Open a weekly report to view Key Developments, Business Implications, Opportunities &amp; Risks and What to Monitor, as supported by evidence. Clearly label pending interpretations; do not show them as approved conclusions. If evidence is sparse, display a short report explaining the limitation. Weekly reports do not replace the underlying News DA event timeline or the longer-term Key Insights.</p>
+<h2>4.2 Key Insights and Related Analyses</h2>
+<p><strong>Key Insights are an entry point to important findings, not a fifth standalone analysis module.</strong> Selecting an insight from the homepage opens its detail view with Key Finding, Business Impact, Opportunities &amp; Risks, Supporting Evidence, and update/review status.</p>
+<p>Within the detail view, <strong>Related Analyses</strong> connects the insight to evidence-supported BMC, PESTEL, Financial BI or News DA findings:</p>
+<ul>
+<li>Show only relevant, supported connections; do not force all four modules into every insight.</li>
+<li>Cards start collapsed. Selecting one expands a short explanation; only one is expanded at a time, and selecting it again collapses it.</li>
+<li>Each card links to its corresponding full analysis section.</li>
+<li>Cross-Analysis appears <strong>within Key Insight details</strong>, not as an additional top-level page.</li>
+</ul>
+<p><strong>Illustrative interaction (not a completed company finding):</strong> A documented digital-service development could appear as a Key Insight; where evidence supports the relationship, Related Analyses may link Technological (PESTEL) and Channels (BMC) to explain different analytical perspectives.</p>
+<h2>4.3 Two-Minute Bilingual Animated Video</h2>
+<p><strong>Working title:</strong> <em>Beyond Convenience — The Business Behind 7-ELEVEN Taiwan</em></p>
+<p>The video will introduce the TP company through an everyday customer journey, connecting stores, digital channels, membership and services to its service-oriented business model. It will be approximately <strong>two minutes</strong>, bilingual in Chinese and English, and embedded on the homepage with <strong>click-to-play</strong> rather than autoplay.</p>
+<p><strong>Production approach:</strong> The group will jointly confirm the storyline and factual content, prepare a bilingual script and storyboard, produce the animation with a suitable tool, and check language, timing and company information before embedding it. Specific tool choices and task assignments will be agreed upon by the group.</p>
+<h2>4.4 Presentation and Evidence Standards</h2>
+<p>The website should show original sources and update dates, clearly distinguish verified from pending-review material, label charts appropriately, and avoid presenting AI hypotheses as confirmed business results.</p>
+<hr />
+<h1>5. Explore the Connections — How Search, Analyze and Present Work Together</h1>
+<p>This section addresses the assignment's request to <strong>explore connections among the three required directions</strong>. It is distinct from the website's <strong>Related Analyses</strong> feature.</p>
+<h2>5.1 Integrated Agent Workflow</h2>
+<p><strong>Automated daily/periodic pipeline:</strong></p>
+<p><strong>Search → Filter &amp; Organize → Analyze → Automated Verification → Risk-Based Review → Present</strong></p>
+<ol>
+<li><p><strong>Search:</strong> Retrieve new information according to source-specific schedules.</p>
+</li>
+<li><p><strong>Filter &amp; Organize:</strong> Deduplicate and classify records, preserve source metadata and dates, and flag missing or weak evidence.</p>
+</li>
+<li><p><strong>Analyze:</strong> Choose the most relevant <strong>primary</strong> analysis module for each event. Add other modules only where the event and supporting evidence justify them. Generate selective Cross-Analysis only when supported by evidence; synthesize screened weekly developments into a Weekly Intelligence draft.</p>
+<p><strong>Illustrative Event-to-Analysis Mapping (routing examples, not completed company findings):</strong></p>
+<p>| Event type | Primary module | Possible supplementary analysis |
+|---|---|---|
+| President Chain Store Corporation monthly revenue disclosure | Financial BI | News DA for timeline context; BMC only if evidence supports a strategic connection |
+| Competitor launches a new membership service | News DA | BMC for supported Customer Relationships / Channels comparisons |
+| Minimum-wage policy adjustment | PESTEL | BMC or Financial BI only if credible operational or financial evidence is available |
+| Logistics or supply-chain development | News DA | BMC Key Partners; PESTEL when external conditions are relevant |
+| 7-ELEVEN launches a documented digital service | BMC | News DA for event history; PESTEL for substantiated technology trends |</p>
+<p>This mapping is <strong>flexible</strong>: it does not require every event to enter all four modules or automatically become a Key Insight.</p>
+</li>
+<li><p><strong>Automated Verification:</strong> Check sources, required fields, dates, numerical values, units, reporting scope and duplicates, then assign a publication path according to risk. Factual records that pass these checks may be updated automatically; automated checks do not establish that every AI interpretation is correct.</p>
+</li>
+<li><p><strong>Risk-Based Review:</strong> Major business judgments, cross-module inferences, conflicting data, insufficiently supported analysis and significant weekly-report interpretations enter <strong>Pending Review</strong>. The group plans weekly batch reviews, with additional review for significant events. Unapproved analysis must not be published as verified conclusions.</p>
+</li>
+<li><p><strong>Present:</strong> Automatically publish low-risk facts and figures that pass rule-based verification. Publish higher-risk interpretation only after group review. Display the approved weekly report, with an archive of prior reports; keep unapproved interpretations visibly pending rather than publishing them as verified. Preserve sources and update timestamps for both paths.</p>
+</li>
+</ol>
+<p>This tiered process allows the Agent to operate continuously while retaining human oversight of significant business interpretation. If data authenticity or reporting scope cannot be automatically established, the record remains pending rather than being forced into publication.</p>
+<h3>Illustrative End-to-End Use Case — Competitor Membership Service</h3>
+<p>This is a <strong>hypothetical workflow example</strong>, not a claim about an actual company announcement or a completed implementation.</p>
+<ol>
+<li>Search identifies an official announcement about a new competitor membership service and records its publication date and URL.</li>
+<li>Filter &amp; Organize checks source credibility, groups duplicate coverage and categorizes the event under <strong>Competitors</strong>.</li>
+<li>News DA serves as the primary module; if the evidence permits a meaningful comparison, BMC adds a focused Customer Relationships / Channels perspective.</li>
+<li>Automated Verification checks the source, dates and factual claims. Any unsupported competitive-impact interpretation remains <strong>Pending Review</strong>.</li>
+<li>After the required review, the website shows the approved event and analysis with source links; the event may also be included in that week's intelligence report.</li>
+</ol>
+<h2>5.2 Website Update Mechanism</h2>
+<p>The website will distinguish the <strong>last data update</strong> from the <strong>analysis review status</strong>. If an update fails, the previously published content and its timestamp will remain visible, and the failure will be recorded. Pending analysis must not appear as a verified conclusion. Scheduling, storage and deployment tools will be determined during implementation.</p>
+<h2>5.3 Functional Connections</h2>
+<ul>
+<li><strong>Search → Analyze:</strong> Source-linked, dated and categorized records provide evidence for each analytical module.</li>
+<li><strong>Analyze → Present:</strong> Module outputs populate the corresponding website sections; weekly synthesis supplies Weekly Intelligence reports and the archive; selective Cross-Analysis supplies Key Insights and their Related Analyses cards.</li>
+<li><strong>Present → Future Search:</strong> Monitoring questions, source gaps and developing trends identified through review help refine future keywords and analytical focus.</li>
+</ul>
+<h2>5.4 Expected Final Deliverables</h2>
+<p>The planned final output is an <strong>interactive bilingual Chinese–English website</strong> with four analysis areas—BMC, PESTEL, Financial BI and News DA—plus a Weekly Intelligence section. It will also include homepage Key Insights, Weekly Intelligence summaries with full weekly reports and historical archives, keyword/date/category search within News DA, Related Analyses within individual insight details, source links, and update/review status indicators. An approximately <strong>two-minute bilingual animated video</strong> will be embedded on the homepage.</p>
+<p>The Agent design connects Search, Analyze, risk-based review and Present, with traceable sources supporting its outputs. Implementation details and task allocation will be confirmed by the group.</p>
+<h2>5.5 Practical Validation Checks</h2>
+<p><strong>The design and final outputs will be validated by the group through the following checks:</strong></p>
+<ul>
+<li><strong>End-to-end flow:</strong> Demonstrate a traceable Search → Analyze → Verification → Review → Present example, such as the hypothetical competitor membership-service use case above.</li>
+<li><strong>Scheduled operation:</strong> Show at least one scheduled retrieval/update execution and the associated update timestamp or a clearly identified test record.</li>
+<li><strong>Source quality and deduplication:</strong> Confirm that repeated reports of the same event are grouped, and that publication dates, original URLs and source identities remain accessible.</li>
+<li><strong>Event routing:</strong> Test that a financial announcement is directed to Financial BI and a competitor service event to News DA, with secondary analysis only when justified by evidence.</li>
+<li><strong>Fact versus interpretation:</strong> Verify that factual records and AI interpretations are distinguishable, and that significant unapproved claims cannot appear as verified conclusions.</li>
+<li><strong>Weekly Intelligence:</strong> Test one dated weekly report, its homepage summary, full-report view and historical archive; test the insufficient-evidence case without invented findings.</li>
+<li><strong>News DA discovery:</strong> Test keyword search, date-range selection and Company / Competitors / Industry filters, including a no-results case.</li>
+<li><strong>Website and scope:</strong> Display a useful, source-linked result in each of BMC, PESTEL, Financial BI and News DA; label financial entities, periods and units correctly, and state limitations where data are unavailable.</li>
+<li><strong>Update failure:</strong> Confirm that a failed update retains previously approved material and its last successful timestamp.</li>
+<li><strong>Video:</strong> Embed and play the approximately two-minute bilingual company-introduction animation.</li>
+</ul>
+<hr />
+<p><strong>End of PRD</strong></p>
+</div></section>
+<div class="footnav"><button id="prev">← Previous</button><div class="mini" id="counter">1 / 7</div><button class="next" id="next">Next →</button></div></main><div class="timing"><span id="clock">00:00</span><button id="timerBtn">Start timer</button><button id="resetBtn" title="Reset">↺</button></div><script>
+const sections=[["overview", "01", "Development Intent", "Why 7-ELEVEN Taiwan?", "A service-oriented retail ecosystem connecting physical stores, digital channels, membership, logistics and everyday-life services."], ["search", "02", "Search", "From scattered sources to structured evidence", "Find, screen and organize traceable information across the company, financial disclosures, competitors, partners and the external environment."], ["analyze", "03", "Analyze", "Four complementary analytical perspectives", "Understand the business model, external environment, financial performance and emerging news trends."], ["intelligence", "04", "Synthesis", "From weekly developments to meaningful insights", "Distinguish recurring weekly intelligence from selective, evidence-supported cross-analysis."], ["present", "05", "Present", "A bilingual, explorable research experience", "A website concept built around understandable results, clear navigation and original sources."], ["connections", "06", "Connections", "How the entire Agent works together", "Connect discovery, analysis, verification, human review and publication in one traceable workflow."], ["close", "07", "Wrap-up", "What the design aims to deliver", "A source-linked bilingual website and an embedded two-minute bilingual company introduction."]];const names=['Overview','Search','Analyze','Synthesis','Present','Connections','Wrap-up'];let active=0;let docMode=false;const $=id=>document.getElementById(id);const nav=$('nav');sections.forEach((s,i)=>{const b=document.createElement('button');b.textContent=names[i];b.onclick=()=>go(i);nav.appendChild(b)});function go(i){if(i<0||i>=sections.length)return;active=i;docMode=false;render();window.scrollTo({top:0,behavior:'instant'})}function render(){document.querySelectorAll('.slide').forEach(e=>e.classList.toggle('active',e.id===(docMode?'document':sections[active][0])));[...nav.children].forEach((e,i)=>e.classList.toggle('active',!docMode&&i===active));$('counter').textContent=docMode?'Full PRD':`${active+1} / ${sections.length} · ${sections[active][2]}`;$('progress').style.width=(docMode?100:(active+1)/sections.length*100)+'%';$('prev').disabled=docMode||active===0;$('next').disabled=docMode||active===sections.length-1;$('docBtn').textContent=docMode?'Back to presentation':'Full PRD'}$('prev').onclick=()=>go(active-1);$('next').onclick=()=>go(active+1);$('docBtn').onclick=()=>{docMode=!docMode;render()};$('presentBtn').onclick=()=>{document.body.classList.toggle('presentation');$('presentBtn').textContent=document.body.classList.contains('presentation')?'◱ Exit present':'⛶ Present'};document.addEventListener('keydown',e=>{if(['ArrowRight','PageDown'].includes(e.key)&&!docMode)go(Math.min(6,active+1));if(['ArrowLeft','PageUp'].includes(e.key)&&!docMode)go(Math.max(0,active-1));if(e.key==='Escape'&&docMode){docMode=false;render()}});
+const sources=[['Company','Official sites, investor relations, services and membership'],['Financial','MOPS, financial reports and monthly revenue'],['Competitors & market','FamilyMart, Hi-Life, OKmart and industry sources'],['Partners & supply chain','Partner announcements, logistics and supply issues'],['External environment','Government, research and credible news']];$('sources').innerHTML=sources.map((x,i)=>`<div style="border:1px solid var(--line);border-radius:11px;padding:13px"><b style="font-size:13px">${x[0]}</b><p class="mini" style="margin:5px 0 0">${x[1]}</p></div>`).join('');
+const modules=[{name:'BMC',sub:'Business Model',q:'How does 7-ELEVEN Taiwan create, deliver and capture value?',items:['Map evidence across the nine BMC building blocks.','Focus on Customer Relationships and Channels: membership, stores, apps and services.','Examine documented change, competitors and Key Partners.'],out:'Evidence-linked nine-block canvas and focused CR/CH explanations.'},{name:'PESTEL',sub:'External Environment',q:'Which external developments may affect the business, and how?',items:['Track Political, Economic, Social, Technological, Environmental and Legal developments.','Explain plausible implications and documented corporate responses.','Separate confirmed effects from prospective risks.'],out:'Source-linked external findings, opportunities, threats and monitoring topics.'},{name:'Financial BI',sub:'Performance',q:'How are financial and operating performance changing?',items:['Track revenue, profitability and disclosed operating indicators.','Compare periods and competitors only where reporting scopes are comparable.','Clearly distinguish President Chain Store Corporation consolidated results from 7-ELEVEN Taiwan brand-only performance.'],out:'Labeled metrics, trend charts and evidence-based commentary.'},{name:'News DA',sub:'Events & Trends',q:'Which company and market events matter, and what patterns are emerging?',items:['Classify Company, Competitors and Industry events; add partner/supply tags where relevant.','Group reports about the same event and compare patterns over time.','Prioritize relevance without duplicating deeper module analysis.'],out:'Event summaries, timeline, trends and follow-up topics.'}];function moduleSelect(i){[...$('moduleBtns').children].forEach((x,j)=>x.classList.toggle('selected',i===j));let m=modules[i];$('moduleDetail').innerHTML=`<div class="eyebrow">${m.name} · ${m.sub}</div><h3 style="margin-top:10px">${m.q}</h3><ul>${m.items.map(x=>`<li>${x}</li>`).join('')}</ul><div class="highlight"><strong>Planned output</strong><div>${m.out}</div></div>`}modules.forEach((m,i)=>{let b=document.createElement('button');b.className='choice';b.innerHTML=`${m.name}<small>${m.sub}</small>`;b.onclick=()=>moduleSelect(i);$('moduleBtns').appendChild(b)});moduleSelect(0);
+const mock=[['BMC','Interactive nine-block canvas; highlight CR and CH; select blocks for evidence and sources.'],['PESTEL','Select six factors; review developments, implications and sourced corporate responses.'],['Financial BI','Explore Revenue, Profitability and Operations; charts label periods, units and reporting entities.'],['News DA','Browse event timeline; filter by keyword, date and Company / Competitors / Industry.']];function mockSelect(i){$('mockDetail').innerHTML=`<div class="eyebrow">Interface concept</div><h3 style="margin:8px 0">${mock[i][0]}</h3><p class="mini">${mock[i][1]}</p><span class="tag orange">Illustrative design · no live data</span>`};mock.forEach((m,i)=>{let b=document.createElement('button');b.textContent=m[0];b.onclick=()=>mockSelect(i);$('mockLinks').appendChild(b)});mockSelect(0);
+const cases=[['1 · Search','Find an official announcement about a hypothetical competitor membership service. Retain its date and original URL.'],['2 · Organize','Check credibility, group duplicate reports and tag the event under Competitors.'],['3 · Analyze','Route primarily to News DA; add BMC Customer Relationships / Channels only if a supported comparison is possible.'],['4 · Verify','Check source, dates and factual claims; keep unsupported competitive-impact interpretations Pending Review.'],['5 · Review','The group reviews significant interpretations before they can be treated as approved conclusions.'],['6 · Present','Show approved, source-linked event information and analysis on the website; possibly include it in Weekly Intelligence.']];function caseSelect(i){[...$('caseBtns').children].forEach((x,j)=>x.classList.toggle('selected',i===j));$('caseDetail').innerHTML=`<div class="eyebrow">Hypothetical workflow example</div><h3 style="margin-top:10px">${cases[i][0]}</h3><p>${cases[i][1]}</p><span class="tag orange">Not an actual company announcement</span>`}cases.forEach((c,i)=>{let b=document.createElement('button');b.className='choice';b.textContent=c[0];b.onclick=()=>caseSelect(i);$('caseBtns').appendChild(b)});caseSelect(0);
+let secs=0,running=false,last=0,handle=null;function fmt(t){return String(Math.floor(t/60)).padStart(2,'0')+':'+String(t%60).padStart(2,'0')}function tick(){if(running){secs++;$('clock').textContent=fmt(secs)}}$('timerBtn').onclick=()=>{running=!running;$('timerBtn').textContent=running?'Pause':'Start timer';if(running)handle=setInterval(tick,1000);else clearInterval(handle)};$('resetBtn').onclick=()=>{running=false;clearInterval(handle);secs=0;$('clock').textContent='00:00';$('timerBtn').textContent='Start timer'};render();
+</script></body></html>
